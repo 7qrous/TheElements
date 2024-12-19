@@ -1,9 +1,9 @@
 
-public class Test {
+public class Tester {
 	public int compare(Card c1, Card c2) {
 		int typeResult = compareType(c1.type, c2.type);
 		int compareResult = comparePower(c1.power, c2.power);
-		if (typeResult == 0) {
+		if (typeResult == 0 ) {
 			return compareResult;
 		} else {
 			return typeResult;
@@ -23,6 +23,6 @@ public class Test {
 
 	public int compareType(int t1, int t2) {
 		int[][] typeTable = new int[][] { { 0, 1, 0, -1 }, { -1, 0, 1, 0 }, { 0, -1, 0, 0 }, { 1, 0, -1, 0 } };
-		return typeTable[t1][t2];
+		return typeTable[t2][t1];
 	}
 }
