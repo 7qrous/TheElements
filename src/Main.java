@@ -17,5 +17,7 @@ public class Main {
 		Card c1111 = new Card(CardType.WATER, 1);
 		Card c2222 = new Card(CardType.FIRE, 1);
 		System.out.println(t.compare(c1111, c2222));
+		
+		Player p = new Player("P1");
 	}
 }
